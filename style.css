@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Marcellus', serif;
+  font-size: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.hero__text {
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+
+.hero__img {
+  height: 30rem;
+  width: 40rem;
+  position: 20rem;
+}
