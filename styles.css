@@ -1,0 +1,85 @@
+/* The navigation bar */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.nav ul {
+  /* width: auto; */
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 1.2rem 0rem 0rem;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  list-style-type: none;
+}
+nav li {
+}
+/* Links inside the navbar */
+.nav a {
+  float: left;
+  display: block;
+  /* color: #f2f2f2; */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+/* css hover */
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover,
+.hvr-sweep-to-top:focus,
+.hvr-sweep-to-top:active {
+  color: white;
+}
+.hvr-sweep-to-top:hover:before,
+.hvr-sweep-to-top:focus:before,
+.hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
