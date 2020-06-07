@@ -7,6 +7,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'CanelaRegular';
+  src: local('CanelaRegular'), url(./fonts/Canela-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'JostLight';
+  src: local('JostLight'), url(./fonts/Jost-300-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'JostBook';
+  src: local('JostBook'), url(./fonts/Jost-400-Book.woff) format('woff');
+}
+@font-face {
+  font-family: 'JostMedium';
+  src: local('JostMedium'), url(./fonts/Jost-500-Medium.woff) format('woff');
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

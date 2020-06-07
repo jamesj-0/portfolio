@@ -1,11 +1,22 @@
 import styled from 'styled-components';
-import { base1 } from './colours';
+// import { base1 } from './colours';
 
 const Title1 = styled.h1`
   font-size: 4.375rem;
   font-family: 'Canela';
   margin: 0;
-  colour: '#FFFFFF';
+`;
+
+const Title2 = styled.h1`
+  font-size: 3.75rem;
+  font-family: 'JostLight';
+  margin: 0;
+`;
+
+const Text1 = styled.p`
+  font-size: 1.25rem;
+  font-family: 'JostBook';
+  margin: 0;
 `;
 
 const Img = `
@@ -21,4 +32,4 @@ const LandingImg = styled.img`
   }
 `;
 
-export { Title1, LandingImg };
+export { Title1, Title2, Text1, LandingImg };

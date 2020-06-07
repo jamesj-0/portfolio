@@ -1,4 +1,3 @@
-import GlobalFonts from './fonts/fonts';
 import React, { useContext } from 'react';
 import Home from './components/home';
 import About from './components/about';
@@ -10,7 +9,6 @@ import * as serviceWorker from './serviceWorker';
 function App() {
   return (
     <>
-      <GlobalFonts />
       <Router>
         <div className="App">
           <Switch>
