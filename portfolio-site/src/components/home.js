@@ -1,8 +1,5 @@
 import React, { useContext } from 'react';
-import { link } from 'react-router-dom';
-
 import { LandingImg, Title1, Text1, Title2 } from '../styles/home';
-// import { useWindowSize } from '@react-hook/window-size';
 import headShotImage from './Assets/16200025.JPG';
 
 export default function Home() {
