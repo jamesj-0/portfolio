@@ -1,10 +1,17 @@
-import React, { useContext } from 'react';
-import { LandingImg, Title1, Text1, Title2 } from '../styles/home';
+import React from 'react';
+import {
+  BGContainer,
+  LandingImg,
+  Title1,
+  Text1,
+  Title2,
+  Title3,
+} from '../styles/home';
 import headShotImage from './Assets/16200025.JPG';
 
 export default function Home() {
   return (
-    <>
+    <BGContainer>
       <Title1>My Portfolio</Title1>
       <Text1>
         I’m a Full Stack Developer with a background in Music and Teaching. I am
@@ -12,8 +19,8 @@ export default function Home() {
         technologies. I love electronic music, cooking and cats.
       </Text1>
       <LandingImg src={headShotImage} alt="Image of James" />
-      <Title1>Full Stack</Title1>
-      <Title2>Developer</Title2>
-    </>
+      <Title2>Full Stack</Title2>
+      <Title3>Developer</Title3>
+    </BGContainer>
   );
 }

@@ -7,13 +7,13 @@ import Contact from './components/contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  const [pageStatus, setPageStatus] = useState('home');
+  const [currentPage, setCurrentPage] = useState('home');
 
   return (
     <>
       <Router>
         <div className="App">
-          <NavBar>{(pageStatus, setPageStatus)}</NavBar>
+          <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
           <Switch>
             <Route exact path="/" component={() => <Home />} />
             <Route exact path="/about" component={() => <About />} />

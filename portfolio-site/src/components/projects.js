@@ -1,7 +1,7 @@
 // Home.js
 
-import React from 'react'
+import React from 'react';
 
-export default () => {
-  return <h1>Projects</h1>
+export default function Projects() {
+  return <h1>Projects</h1>;
 }

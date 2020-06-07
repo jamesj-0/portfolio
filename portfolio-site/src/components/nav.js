@@ -8,27 +8,79 @@ import {
   ListItemHome,
 } from '../styles/nav';
 
-export default function NavBar({ pageStatus }) {
+export default function NavBar({ currentPage, setCurrentPage }) {
   return (
     <Nav>
-      {pageStatus === 'home' ? (
+      {currentPage === 'home' ? (
         <>
-          <HomeLinkHome to="/">James Hardy</HomeLinkHome>
+          <HomeLinkHome
+            key="home"
+            to="/"
+            onClick={() => setCurrentPage('home')}
+          >
+            James Hardy
+          </HomeLinkHome>
           <ul>
-            <ListItemHome>Home</ListItemHome>
-            <ListItemHome to="/about">About</ListItemHome>
-            <ListItemHome to="/projects">Projects</ListItemHome>
-            <ListItemHome to="/contact">Contact</ListItemHome>
+            <ListItemHome
+              key="home"
+              to="/"
+              onClick={() => setCurrentPage('home')}
+            >
+              Home>Home
+            </ListItemHome>
+            <ListItemHome
+              key="about"
+              to="/about"
+              onClick={() => setCurrentPage('about')}
+            >
+              About
+            </ListItemHome>
+            <ListItemHome
+              key="projects"
+              to="/projects"
+              onClick={() => setCurrentPage('projects')}
+            >
+              Projects
+            </ListItemHome>
+            <ListItemHome
+              key="contact"
+              to="/contact"
+              onClick={() => setCurrentPage('contact')}
+            >
+              Contact
+            </ListItemHome>
           </ul>
         </>
       ) : (
         <>
-          <HomeLink to="/"> James Hardy</HomeLink>
+          <HomeLink key="home" to="/" onClick={() => setCurrentPage('home')}>
+            James Hardy
+          </HomeLink>
           <ul>
-            <ListItem to="/">Home</ListItem>
-            <ListItem to="/about">About</ListItem>
-            <ListItem to="/projects">Projects</ListItem>
-            <ListItem to="/contact">Contact</ListItem>
+            <ListItem key="home" to="/" onClick={() => setCurrentPage('home')}>
+              Home
+            </ListItem>
+            <ListItem
+              key="about"
+              to="/about"
+              onClick={() => setCurrentPage('about')}
+            >
+              About
+            </ListItem>
+            <ListItem
+              key="projects"
+              to="/projects"
+              onClick={() => setCurrentPage('projects')}
+            >
+              Projects
+            </ListItem>
+            <ListItem
+              key="contact"
+              to="/contact"
+              onClick={() => setCurrentPage('contact')}
+            >
+              Contact
+            </ListItem>
           </ul>
         </>
       )}
