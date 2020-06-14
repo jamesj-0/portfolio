@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
-
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -15,7 +13,7 @@ const StyledUL = styled.ul`
   marign: auto 0 auto 0;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.button`
   font-family: Jost *;
   font-style: normal;
   font-weight: normal;
@@ -34,7 +32,7 @@ const StyledLI = styled.li`
   list-style-type: none;
 `;
 
-const NameLink = styled(Link)`
+const NameLink = styled.h2`
   margin: auto 0 auto 10%;
   font-family: Canela;
   font-style: normal;
@@ -51,22 +49,22 @@ const NameLink = styled(Link)`
 const navItems = [
   {
     title: 'home',
-    titleHref: '/',
+    titleHref: '#home',
     key: '1',
   },
   {
     title: 'about',
-    titleHref: '/about',
+    titleHref: '#about',
     key: '2',
   },
   {
     title: 'projects',
-    titleHref: '/projects',
+    titleHref: '#projects',
     key: '3',
   },
   {
     title: 'contact',
-    titleHref: '/contact',
+    titleHref: '#contact',
     key: '4',
   },
 ];
@@ -79,9 +77,9 @@ export default function NavBar({ currentPage, setCurrentPage }) {
         {navItems.map((item) => (
           <StyledLI>
             <StyledLink
-              className="hover-3"
+              as="a"
               key={item.key}
-              to={item.titleHref}
+              href={item.titleHref}
               onClick={() => setCurrentPage(item.title)}
             >
               {item.title}

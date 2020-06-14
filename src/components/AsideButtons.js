@@ -30,13 +30,13 @@ const Button = styled.a`
   font-size: 22px;
   line-height: 32px;
   text-transform: capitalize;
-  transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 
   &:hover {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
     position: relative;
-    top: -1px;
-    left: -1px;
+    top: -3px;
+    left: -3px;
   }
 `;
 
