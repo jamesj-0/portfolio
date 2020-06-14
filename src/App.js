@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import NavBar from './components/nav';
 import Home from './components/sections/home';
 import About from './components/sections/about';
+import Contact from './components/sections/contact';
 import AsideButtons from './components/AsideButtons';
 
 const Wrapper = styled.div`
@@ -46,6 +47,9 @@ function App() {
           </Wrapper>
           <Wrapper index={1} color="rgb(233,236,230)">
             <About />
+          </Wrapper>
+          <Wrapper index={1} color="rgb(229,229,229)">
+            <Contact />
           </Wrapper>
           <ReturnButton />
           <Switch>
