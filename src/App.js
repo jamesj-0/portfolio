@@ -19,7 +19,7 @@ const StyledGit = styled(ChevronUpOutline)`
   height: 26px;
   position: relative;
   top: -4px;
-  left: -2.6pxpx;
+  left: -2.6px;
   color: #f2ddcd;
 
   &:hover {
