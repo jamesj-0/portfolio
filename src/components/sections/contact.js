@@ -56,7 +56,7 @@ const ContactTitle = styled.h2`
   padding: 1vh;
   display: flex;
   align-items: center;
-
+  text-decoration: none;
   color: #000000;
 
   transition: box-shadow 0.2s ease-in-out;
@@ -71,6 +71,7 @@ const ContactTitle = styled.h2`
 
 const ContactButton = styled.div`
   background: transparent;
+
   display: flex;
   height: inherit;
   transition: box-shadow 0.1s ease-in-out;
@@ -92,7 +93,9 @@ export default function Contact() {
       <Section>
         <FlexDiv>
           <ContactButton>
-            <ContactTitle>hey@jameshardy.site</ContactTitle>
+            <ContactTitle as="a" href="mailto:hey@jameshardy.site">
+              hey@jameshardy.site
+            </ContactTitle>
           </ContactButton>
         </FlexDiv>
         <CopyrightText>© 2020. All rights reserved</CopyrightText>
