@@ -5,10 +5,10 @@ const MainContainer = styled.article`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 0 10%;
 `;
 
 const PageTitle = styled.h1`
+  margin: 10vh auto 0 10%;
   font-family: Canela;
   font-style: normal;
   font-weight: normal;
@@ -22,6 +22,7 @@ const PageTitle = styled.h1`
 
 const ProjectsSection = styled.section`
   display: flex;
+  justify-content: center;
 `;
 
 const ProjectContainer = styled.div`
@@ -36,12 +37,10 @@ const StyledH2 = styled.h2`
   font-weight: normal;
   font-size: 45px;
   line-height: 45px;
-  /* identical to box height */
-
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  margin: 0 auto;
+  margin: 5vh auto;
 `;
 
 const StyledP = styled.p`
@@ -55,15 +54,19 @@ const StyledP = styled.p`
   max-width: 410px;
 `;
 
-const StyledUL = styled.ul``;
+const StyledUL = styled.ul`
+  padding: 0;
+`;
+const Role = styled.li`
+  list-style-type: none;
+  margin: 1vh 0;
+`;
 
 const Stack = styled.li`
   list-style-type: none;
+  margin: 1vh 0;
 `;
 
-const Role = styled.li`
-  list-style-type: none;
-`;
 const ButtonWrapper = styled.div`
   display: flex;
 `;
@@ -77,6 +80,8 @@ const Button = styled.a`
   background: transparent;
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
+
   background: ${(props) => props.colour};
   color: ${(props) => props.innerColour};
   font-family: Jost *;
@@ -84,7 +89,6 @@ const Button = styled.a`
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  text-transform: capitalize;
   transition: box-shadow 0.1s ease-in-out;
   cursor: pointer;
 
