@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import zaatariRender from '../Assets/Renders.svg';
+import bechdelRender from '../Assets/Renders2.svg';
 
 const MainContainer = styled.article`
   height: 100vh;
@@ -29,6 +31,17 @@ const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 5rem;
+`;
+
+const RenderImg = styled.img`
+width 30vw; 
+heigh 50vh; 
+object-fit: cover; 
+margin-top: 5rem;
+`;
+
+const BechdelImage = styled(RenderImg)`
+  margin-top: 3.3rem;
 `;
 
 const StyledH2 = styled.h2`
@@ -106,6 +119,7 @@ export default function Projects() {
       <PageTitle>Projects</PageTitle>
       <ProjectsSection>
         <ProjectContainer>
+          <RenderImg src={zaatariRender} alt="Radio Zaatari Figma Mockup" />
           <StyledH2>Project Zaatari</StyledH2>
           <StyledP>
             {`From concept through to completion, I designed & developed a
@@ -126,6 +140,7 @@ export default function Projects() {
           </ButtonWrapper>
         </ProjectContainer>
         <ProjectContainer>
+          <BechdelImage src={bechdelRender} alt="Bechdel Figma Mockup" />
           <StyledH2>Bechdel & Beyond</StyledH2>
           <StyledP>
             {`A community-driven service that allows people to rate films based 
