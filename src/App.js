@@ -7,6 +7,8 @@ import NavBar from './components/nav';
 import Home from './components/sections/home';
 import About from './components/sections/about';
 import Contact from './components/sections/contact';
+import Projects from './components/sections/projects';
+
 import AsideButtons from './components/AsideButtons';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
@@ -58,6 +60,9 @@ function App() {
           <Wrapper index={1} color="rgb(233,236,230)" id="about">
             <About />
           </Wrapper>
+          <Wrapper index={1} color="rgb(229,229,229)" id="projects">
+            <Projects />
+          </Wrapper>
           <Wrapper index={1} color="rgb(229,229,229)" id="contact">
             <Contact />
           </Wrapper>
@@ -67,9 +72,6 @@ function App() {
             </ReturnButton>
           ) : null}
           <Switch>
-            {/* <Route exact path="/" component={() => } /> */}
-            {/* <Route exact path="/about" component={() => <About />} /> */}
-            <Route exact path="/projects" component={() => <div />} />
             <Route exact path="/contact" component={() => <div />} />
           </Switch>
         </main>
