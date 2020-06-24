@@ -9,6 +9,13 @@ const StyledAside = styled.aside`
   width: auto;
   position: fixed;
   right: 2vw;
+
+  @media (max-width: 667px) {
+    position: absolute;
+    top: 800px;
+    transform: rotate(90deg);
+    margin: -4rem -2rem;
+  }
 `;
 
 const Button = styled.a`
@@ -38,24 +45,39 @@ const Button = styled.a`
     top: -3px;
     left: -3px;
   }
+  @media (max-width: 667px) {
+    width: 3rem;
+    height: 13rem;
+  }
 `;
 
 const InnerText = styled.p`
   positon: relative;
   transform: rotate(-90deg);
   margin: 10px 0 0;
+  @media (max-width: 667px) {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+  }
 `;
 
 const StyledGit = styled(Github)`
   height: 25px;
   width: 25px;
   margin: 0 0 0 0.25rem;
+  @media (max-width: 667px) {
+    transform: rotate(-90deg);
+  }
 `;
 
 const StyledLI = styled(Linkedin)`
   height: 25px;
   width: 25px;
   margin: 0 0 0 0.25rem;
+  @media (max-width: 667px) {
+    transform: rotate(-90deg);
+  }
 `;
 
 const links = [

@@ -15,6 +15,12 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 const Wrapper = styled.div`
   background-color: ${(props) => props.color};
   height: 100vh;
+  @media (max-width: 667px) {
+    flex-direction: column;
+    height: 200vh;
+    width: 200vw;
+  }
+
   z-index: ${(props) => props.index};
 `;
 const StyledGit = styled(ChevronUpOutline)`

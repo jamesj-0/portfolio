@@ -25,6 +25,10 @@ const StyledLink = styled.button`
   text-transform: capitalize;
   color: rgb(249, 243, 242);
   text-decoration: none;
+
+  @media (max-width: 667px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const StyledLI = styled.li`
@@ -44,6 +48,12 @@ const NameLink = styled.h2`
   text-align: center;
   color: rgb(249, 243, 242);
   text-decoration: none;
+
+  @media (max-width: 667px) {
+    margin: 0;
+    padding: 0 0 0 3rem;
+    font-size: 2rem;
+  }
 `;
 
 const navItems = [

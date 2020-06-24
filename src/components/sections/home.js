@@ -6,9 +6,15 @@ const ContainerMain = styled.article`
   display: flex;
   justify-content: space-between;
   margin: 3rem 0 0 0;
+  @media (max-width: 667px) {
+    flex-direction: column;
+  }
 `;
 const Container = styled.article`
   flex-grow: 1;
+    @media (max-width: 667px) {
+    200vw;
+    }
 `;
 
 const StyledHeader = styled.header`
@@ -16,6 +22,10 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   margin: 3rem 0 0 0;
   width: 100vw;
+  @media (max-width: 667px) {
+    margin: 1rem auto;
+    padding: 3rem 0px 0px 0px;
+  }
 `;
 
 const PageTitle = styled.h1`
@@ -29,10 +39,16 @@ const PageTitle = styled.h1`
   align-items: center;
   text-transform: capitalize;
   color: rgb(249, 243, 242);
+  @media (max-width: 667px) {
+    margin: 1rem auto;
+  }
 `;
 
 const Section = styled.section`
   display: flex;
+  @media (max-width: 667px) {
+    flex-direction: column;
+  }
 `;
 
 const Text = styled.p`
@@ -42,14 +58,28 @@ const Text = styled.p`
   min-width: 188px;
   max-width: 188px;
   color: rgb(249, 243, 242);
+  @media (max-width: 667px) {
+    text-align: left;
+    margin: 1rem auto;
+    min-width: 70%;
+    max-width: 50%;
+    font-size: 1.5rem;
+  }
 `;
 
 const LandingImg = styled.img`
-  flex-grow: 0.1;
+  flex-grow: 0.2;
   width: 30vw;
   height: 50vh;
   object-fit: cover;
   object-position: 40% 0;
+  @media (max-width: 667px) {
+    text-align: center;
+    margin: 5rem auto;
+    min-width: 70%;
+    max-width: 50%;
+    font-size: 1.5rem;
+  }
 `;
 const StyledH2 = styled.h2`
   margin: 0 auto 0 auto;
@@ -70,6 +100,11 @@ const FlexDiv = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   height: 58vh;
+  @media (max-width: 667px) {
+    height: 0;
+    position: relative;
+    top: -5.5rem;
+  }
 `;
 
 const StyledSpan = styled.span`
