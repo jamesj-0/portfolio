@@ -19,10 +19,17 @@ const PageTitle = styled.h1`
   align-items: center;
   text-transform: capitalize;
   color: #000000;
+  @media (max-width: 667px) {
+    margin: 3rem auto;
+    font-size: 90px;
+  }
 `;
 
 const Section = styled.section`
   display: flex;
+  @media (max-width: 667px) {
+    flex-direction: column;
+  }
 `;
 
 const Text = styled.p`
@@ -39,6 +46,11 @@ const Text = styled.p`
   line-height: 29px;
 
   color: #000000;
+
+  @media (max-width: 667px) {
+    margin: 3rem auto;
+    font-size: 22px;
+  }
 `;
 
 const FlexDiv = styled.div`
@@ -48,6 +60,10 @@ const FlexDiv = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   height: 58vh;
+  @media (max-width: 667px) {
+    height: 0;
+    margin: 10rem auto;
+  }
 `;
 
 const Button = styled.a`
@@ -75,6 +91,12 @@ const Button = styled.a`
     position: relative;
     top: -1px;
     left: -1px;
+  }
+
+  @media (max-width: 667px) {
+    height: 100px;
+    font-size: 40px;
+    padding: 2rem;
   }
 `;
 

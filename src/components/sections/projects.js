@@ -20,11 +20,20 @@ const PageTitle = styled.h1`
   align-items: center;
   text-transform: capitalize;
   color: #000000;
+
+  @media (max-width: 667px) {
+    margin: 4rem auto;
+    font-size: 90px;
+  }
 `;
 
 const ProjectsSection = styled.section`
   display: flex;
   justify-content: center;
+
+  @media (max-width: 667px) {
+    flex-direction: column;
+  }
 `;
 
 const ProjectContainer = styled.div`
@@ -34,10 +43,13 @@ const ProjectContainer = styled.div`
 `;
 
 const RenderImg = styled.img`
-width 30vw; 
-heigh 50vh; 
-object-fit: cover; 
-margin-top: 5rem;
+  width: 30vw;
+  object-fit: cover;
+  margin-top: 5rem;
+  @media (max-width: 667px) {
+    width: 150vw;
+    margin: 0 auto;
+  }
 `;
 
 const BechdelImage = styled(RenderImg)`
@@ -65,6 +77,14 @@ const StyledP = styled.p`
   text-align: justify;
 
   max-width: 410px;
+
+  @media (max-width: 667px) {
+    width: 100vw;
+    margin: 0 auto 2rem auto;
+    font-size: 20px;
+    min-width: 500px;
+    line-height: 25px;
+  }
 `;
 
 const StyledUL = styled.ul`
@@ -73,15 +93,25 @@ const StyledUL = styled.ul`
 const Role = styled.li`
   list-style-type: none;
   margin: 1vh 0;
+
+  @media (max-width: 667px) {
+    margin: 1vh 0 0 5.3rem;
+  }
 `;
 
 const Stack = styled.li`
   list-style-type: none;
   margin: 1vh 0;
+  @media (max-width: 667px) {
+    margin: 1vh 0 0 5.3rem;
+  }
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
+  @media (max-width: 667px) {
+    margin: 1rem 5rem 5rem 5rem;
+  }
 `;
 
 const Button = styled.a`
@@ -110,6 +140,13 @@ const Button = styled.a`
     position: relative;
     top: -1px;
     left: -1px;
+  }
+  @media (max-width: 667px) {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
   }
 `;
 

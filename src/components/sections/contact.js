@@ -11,6 +11,9 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   padding: 4rem 0 0 0;
   flex-grow: 1;
+  @media (max-width: 667px) {
+    margin: 30rem 0 0 0;
+  }
 `;
 
 const PageTitle = styled.h1`
@@ -24,6 +27,11 @@ const PageTitle = styled.h1`
   align-items: center;
   text-transform: capitalize;
   color: #000000;
+
+  @media (max-width: 667px) {
+    font-size: 90px;
+    margin: 10rem auto 5rem auto;
+  }
 `;
 
 const Section = styled.section`
@@ -77,11 +85,18 @@ const ContactButton = styled.div`
   transition: box-shadow 0.1s ease-in-out;
   cursor: pointer;
   margin: 0 0 0 0;
+
+  @media (max-width: 667px) {
+    margin: 5rem auto;
+  }
 `;
 
 const FlexDiv = styled.div`
   display: flex;
   margin: 0 auto 0 10%;
+  @media (max-width: 667px) {
+    margin: 10vh 0 70vh 0;
+  }
 `;
 
 export default function Contact() {
