@@ -165,13 +165,25 @@ export default function Projects() {
           </StyledP>
           <StyledUL>
             <Role>Role: Dev-Ops</Role>
-            <Stack>Tech Stack:</Stack>
+            <Stack>
+              Tech Stack: React, Netlify, Lambda, Airtable, Styled Components,
+              <br />
+              Material UI, Jest, Cypress, Story Book
+            </Stack>
           </StyledUL>
           <ButtonWrapper>
-            <Button colour="rgb(219,132,82)" innerColour="rgb(0,0,0)">
+            <Button
+              href="radio-zaatari.netlify.app/"
+              colour="rgb(219,132,82)"
+              innerColour="rgb(0,0,0)"
+            >
               Visit App
             </Button>
-            <Button colour="rgb(45,78,53)" innerColour="rgb(255,255,255)">
+            <Button
+              href="https://github.com/fac19/Zaatari-Radio"
+              colour="rgb(45,78,53)"
+              innerColour="rgb(255,255,255)"
+            >
               Visit Code
             </Button>
           </ButtonWrapper>
@@ -186,13 +198,25 @@ export default function Projects() {
           </StyledP>
           <StyledUL>
             <Role>Role: Scrum Master</Role>
-            <Stack>Tech Stack:</Stack>
+            <Stack>
+              Tech Stack: Node.Js Express PostgreSQL, React,
+              <br />
+              Material UI, Tape, Jest, Travis CI, Cypress
+            </Stack>
           </StyledUL>
           <ButtonWrapper>
-            <Button colour="rgb(219,132,82)" innerColour="rgb(0,0,0)">
+            <Button
+              href="https://bechdelbeyond.netlify.app/"
+              colour="rgb(219,132,82)"
+              innerColour="rgb(0,0,0)"
+            >
               Visit App
             </Button>
-            <Button colour="rgb(45,78,53)" innerColour="rgb(255,255,255)">
+            <Button
+              href="https://github.com/fac19/Bechdel-Beyond"
+              colour="rgb(45,78,53)"
+              innerColour="rgb(255,255,255)"
+            >
               Visit Code
             </Button>
           </ButtonWrapper>

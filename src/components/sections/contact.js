@@ -42,18 +42,6 @@ const Section = styled.section`
   background-color: #f2ddcd;
 `;
 
-const CopyrightText = styled.p`
-  font-family: Jost *;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 32px;
-  margin: 0 0 1rem 10%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-`;
-
 const ContactTitle = styled.h2`
   font-family: Jost *;
   font-style: normal;
@@ -108,12 +96,11 @@ export default function Contact() {
       <Section>
         <FlexDiv>
           <ContactButton>
-            <ContactTitle as="a" href="mailto:hey@jameshardy.site">
-              hey@jameshardy.site
+            <ContactTitle as="a" href="mailto:jamesjhardy95@gmail.com">
+              jamesjhardy95@gmail.com
             </ContactTitle>
           </ContactButton>
         </FlexDiv>
-        <CopyrightText>© 2020. All rights reserved</CopyrightText>
       </Section>
     </MainContainer>
   );

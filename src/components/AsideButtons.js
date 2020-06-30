@@ -83,13 +83,13 @@ const StyledLI = styled(Linkedin)`
 const links = [
   {
     title: 'linkedin',
-    href: 'https://www.linkedin.com',
+    href: 'https://www.linkedin.com/in/jamesh0/',
     colour: '#E9ECE6 ',
     innerColour: '#000000',
   },
   {
     title: 'github',
-    href: 'https://www.github.com',
+    href: 'https://github.com/jamesj-0',
     colour: ' #2D4E35 ',
     innerColour: '#FFFFFF',
   },

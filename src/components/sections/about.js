@@ -133,7 +133,12 @@ export default function About() {
             theirs.
           </Text>
           <FlexDiv>
-            <Button colour="#DB8452" innerColour="#FFFFFF">
+            <Button
+              href="/JamesHardy_CV.pdf"
+              colour="#DB8452"
+              innerColour="#FFFFFF"
+              download
+            >
               Download CV
             </Button>
           </FlexDiv>
